@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms - Lets learn it</title>
+  </head>
+  <body>
+    <h1>Form to Apply for Audition</h1>
+    <form action="post">
+      <div>
+        <label for="username">Enter your Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username" autofocus
+        />
+      </div><br>
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="walmartbag" name="gender" value="walmartbag" />
+        <label for="walmartbag">Walmart Bag</label>
+        <input type="radio" id="batman" name="gender" value="batman" />
+        <label for="batman">Batman</label>
+      </div><br>
+      <div><input type="checkbox" name="confirm" value="yes" />I can confirm</div><br>
+      <div>
+        <label for="comments">Enter your comments</label><br>
+        <textarea name="comments" rows="4" cols="50"></textarea>
+      </div><br>
+      <div>
+        <select name="country"><option value="india">India</option><option value="usa">United States of America</option><option value="uk">United Kingdom</option><option value="australia">Australia</option></select>
+      </div>
+    </form>
+  </body>
+</html>
