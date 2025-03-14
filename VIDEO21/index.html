@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CSS Specificity</title>
+  </head>
+  <style>
+    /* h1{
+        color: aqua !important;
+    } */
+    .yellow {
+      color: yellow;
+    }
+    .cred {
+      color: red;
+    }
+    .cpurple {
+      color: purple;
+    }
+    ol{
+        color: blue !important;
+    }
+    .black{
+        color: rgba(0, 0, 0, 0.616);
+    }
+  </style>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple">CSS Specificity
+        <ol class="black" type="i">
+            <li>yoooooo</li>
+            <li>yooooo</li>
+            <li>yoooo</li>
+            <li>yooo</li>
+        </ol>
+      </h1>
+    </div>
+  </body>
+</html>
