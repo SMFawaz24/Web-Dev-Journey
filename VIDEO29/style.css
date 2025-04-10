@@ -1,0 +1,55 @@
+.card {
+    border-radius: 6px;
+    border: 6px solid burlywood;
+    height: 400px;
+    width: 250px;
+    margin: 0;
+    padding: 10px;
+  }
+  .capsules {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .capsule {
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;  
+  }
+  .capsule.nature {
+    background-color: #03a9f4;
+    color: rgb(255, 255, 255);
+  }
+  .capsule.lake {
+    background-color: #03a9f4;
+    color: white;
+  }
+  h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 10px;
+  }
+  .read-more {
+    display: capsule;
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    background-color: #03a9f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  .read-more:hover {
+    background-color: #2d7180;
+  }
