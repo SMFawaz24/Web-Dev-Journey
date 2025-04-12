@@ -1,0 +1,28 @@
+:root{
+    --color: aquamarine;
+    --seccolor: blanchedalmond;
+}
+*{
+    margin: 0%;
+    border: 0%;
+}
+
+
+ul{
+    background-color: var(--color);
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+ul li :first-child{
+    --color: rgb(219, 99, 99);
+    background-color: var(--color);
+}
+
+.nav{
+    background-color: var(--seccolor)
+}
+
