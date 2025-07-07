@@ -1,0 +1,93 @@
+# CSS Flexbox
+## Properties
+  - Easier to layout, align and style items in a container.
+  - Can have multiple properties in as flex container and even in flex items.
+## Other Important Points
+- Flex Direction - Row(default)
+  Left-->Right
+- Flex Direction - Row-reverse
+  Right-->Left
+- Flex Direction - Column
+  Top-->Bottom
+- Flex Direction - Column-reverse
+  Bottom-->Top
+### Container Properties
+	- Border
+	- Height
+	- Display
+	- Justify-content
+	- Align-items/align-content
+	- Flex-direction
+	- Flex-wrap
+	- Flex-flow
+	- gap(row-gap,column-gap)
+### Item Properties
+	- order
+	- Flex-grow/flex-shrink
+	- Align-self
+![image](https://github.com/user-attachments/assets/e85ef04e-0ea2-4aaa-a5f6-ceb5c01fb76a)
+
+## Code Example
+```
+<title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            /* align-content: flex-start; */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+            /* gap: 30px; */
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+        .item{
+            height: 32px;
+            width: 96px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            align-self: flex-start;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <main>
+        <div class="container">
+            <div class="item order-2">1</div>
+            <div class="item item1">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item order-1">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item order-1">11</div>
+    </main>
+  </body>
